@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Perang Khandak: Kronologi</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+        <div class="slider">
+            <div class="slides" style="--img: url('Pictures/1.gif')">
+                <div class="content">
+                    <h2>01</h2>
+                    <p><b>Ketidakseimbangan kekuatan menambah tekanan kepada umat Islam di Madinah.</b></p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Pictures/2.gif')">
+                <div class="content">
+                    <h2>02</h2>
+                    <p><b>Rasulullah SAW memerintahkan penggalian parit yang melibatkan semua umat Islam dengan kedalaman 4.5 meter dan lebar 9 meter, digali dalam masa 6 hari.</b></p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Pictures/4.gif')">
+                <div class="content">
+                    <h2>03</h2>
+                    <p><b>Musuh mengepung Madinah selama sebulan dalam keadaan cuaca yang buruk, menghalang bekalan dan bantuan dari luar, sambil menunggu peluang untuk menyerang.</b></p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Pictures/3.gif')">
+                <div class="content">
+                    <h2>04</h2>
+                    <p><b>Seorang pahlawan Quraisy, Amr bin Wudd, berjaya melintasi parit dengan kudanya, namun beliau akhirnya ditewaskan oleh Ali bin Abi Talib.</b></p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Pictures/5.gif')">
+                <div class="content">
+                    <h2>05</h2>
+                    <p><b>Bani Quraizah yang sepatutnya menjadi sekutu umat Islam menyokong musuh dan berusaha membuka jalan untuk menyerang Madinah dari dalam. Namun, mereka tidak berjaya.</b></p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Pictures/6.gif')">
+                <div class="content">
+                    <h2>06</h2>
+                    <p><b>Namun, keteguhan hati umat Islam yang dipimpin oleh Rasulullah SAW, serta doa-doa yang tidak putus-putus, menjadi pelindung rohani yang menghalang usaha musuh untuk menundukkan mereka secara psikologi.</b></p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Pictures/7.gif')">
+                <div class="content">
+                    <h2>07</h2>
+                    <p><b>Hukuman terhadap Bani Quraizah dilaksanakan berdasarkan keputusan yang dibuat oleh Sa'ad bin Mu'adh iaitu hukuman mati bagi lelaki dewasa yang terlibat dalam pengkhianatan, manakala wanita dan kanak-kanak dijadikan tawanan.</b></p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('Pictures/8.gif')">
+                <div class="content">
+                    <h2>08</h2>
+                    <p><b>Rasulullah SAW mengadili Bani Quraizah mengikut hukum yang telah mereka sepakati dalam Piagam Madinah.</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+    </div>
+    <script>
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        let slider = document.querySelector('.slider');
+
+        next.addEventListener('click', function(){
+            let slides = document.querySelectorAll('.slides');
+            slider.appendChild(slides[0]);
+        })
+        prev.addEventListener('click', function(){
+            let slides = document.querySelectorAll('.slides');
+            slider.prepend(slides[slides.length - 1]);
+        })
+    </script>
+</body>
+</html>
